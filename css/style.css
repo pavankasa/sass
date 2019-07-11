@@ -1,0 +1,61 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: linear-gradient(to top, #ccc, #e5e5e5);
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 10px;
+}
+
+header img {
+  max-height: 75px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+}
+
+header nav ul li {
+  float: left;
+  list-style-type: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+main {
+  -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  background: #1b007e;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f5af19), to(#1b007e));
+  background: linear-gradient(to right, #f5af19, #1b007e);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: absolute;
+  height: 90%;
+  width: 100%;
+}
+
+main .container h1 {
+  color: #FFF;
+  margin-top: 3rem;
+  padding-left: 1rem;
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+}
+/*# sourceMappingURL=style.css.map */
