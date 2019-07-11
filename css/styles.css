@@ -1,0 +1,69 @@
+body {
+  background-color: #2C3335;
+}
+
+.container, .wrapper {
+  padding: 15px;
+}
+
+div p {
+  color: #FFF;
+  font-size: 16pt;
+}
+
+/* map and get */
+.primary, .success, .info, .warning, .danger, .primary1, .success1, .info1, .warning1, .danger1 {
+  padding: 10px;
+}
+
+.container .primary {
+  background-color: #0A79DF;
+  color: #FFF;
+}
+
+.container .success {
+  background-color: #26ae60;
+  color: #FFF;
+}
+
+.container .info {
+  background-color: #25CCF7;
+  color: #2B2B52;
+}
+
+.container .warning {
+  background-color: #F3B63A;
+  color: #2B2B52;
+}
+
+.container .danger {
+  background-color: #D63031;
+  color: #FFF;
+}
+
+/* sass functions */
+.wrapper .primary1 {
+  background-color: #0A79DF;
+  color: #FFF;
+}
+
+.wrapper .success1 {
+  background-color: #26ae60;
+  color: #FFF;
+}
+
+.wrapper .info1 {
+  background-color: #25CCF7;
+  color: #2B2B52;
+}
+
+.wrapper .warning1 {
+  background-color: #F3B63A;
+  color: #2B2B52;
+}
+
+.wrapper .danger1 {
+  background-color: #D63031;
+  color: #FFF;
+}
+/*# sourceMappingURL=styles.css.map */

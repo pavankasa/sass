@@ -1,0 +1,83 @@
+$primary-color:#0A79DF;
+$secondary-color :#2C3335;
+$color-white : #FFF;
+$font-large : 16pt;
+$container-padding :15px;
+$div-padding :10px;
+body{
+    background-color: $secondary-color;
+}
+.container, .wrapper{
+    padding: $container-padding;
+}
+div p{
+    color:$color-white;
+    font-size:$font-large;
+}
+
+/* map and get */
+$colors : (
+    primary : #0A79DF,
+    success : #26ae60,
+    warning : #F3B63A,
+    info : #25CCF7,
+    danger : #D63031,
+);
+$text-colors :(
+    primary : $color-white,
+    success : $color-white,
+    warning : #2B2B52,
+    info : #2B2B52,
+    danger : $color-white,
+);
+.primary, .success, .info, .warning, .danger, .primary1, .success1, .info1, .warning1, .danger1 {
+    padding: $div-padding;
+}
+.container .primary{
+    background-color:map-get($map: $colors, $key: primary);
+    color:map-get($map:$text-colors, $key: primary);
+    }
+.container .success{
+    background-color: map-get($map: $colors, $key: success);
+    color:map-get($map: $text-colors, $key: success);
+    }
+.container .info{
+    background-color: map-get($map: $colors, $key: info);
+    color:map-get($map: $text-colors, $key: info);
+    }
+.container .warning{
+    background-color:map-get($map: $colors, $key: warning);
+    color:map-get($map: $text-colors, $key: warning);
+}
+.container .danger {
+    background-color: map-get($map: $colors, $key: danger);
+    color:map-get($map: $text-colors, $key: danger);
+}
+/* sass functions */
+@function colors($colorName){
+    @return map-get($map: $colors, $key: $colorName)
+}
+
+@function textColors($textColor){
+    @return map-get($map: $text-colors, $key: $textColor);
+}
+.wrapper .primary1{
+    background-color: colors(primary);
+    color: textColors(primary);
+}
+.wrapper .success1{
+    background-color: colors(success);
+    color: textColors(success);
+}
+.wrapper .info1{
+    background-color: colors(info);
+    color:textColors(info);
+}
+.wrapper .warning1{
+    background-color: colors(warning);
+    color: textColors(warning);
+}
+.wrapper .danger1{
+    background-color: colors(danger);
+    color:textColors(danger)
+}
